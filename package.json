@@ -1,0 +1,10 @@
+{
+  "name": "web_bluetooth",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "pug": "^2.0.3"
+  }
+}

@@ -1,0 +1,21 @@
+doctype html
+html(lang='ja')
+  head
+    meta(charset='UTF-8')
+    meta(name='robots', content='noindex')
+    meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no')
+    title WebBluetoothAPI with BLENano
+    script(src="js/app.js")
+  body
+    main
+      #search-button.show
+        .view-inner
+          .btn.btn-block.btn-lg.btn-primary SEARCH
+      #func-button.show
+        #read-button.view-inner
+          .btn.btn-block.btn-lg.btn-primary READ
+        #write-button.view-inner
+          .btn.btn-block.btn-lg.btn-primary WRITE
+      .view-inner
+        input#data-form.form-control(type='text', value='', placeholder='no data')
+      #loading.hide
