@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "parcel -d docs --https ./src/index.pug"
+  },
   "devDependencies": {
+    "howler": "^2.0.12",
     "node-sass": "^4.9.0",
     "pug": "^2.0.3"
   }
