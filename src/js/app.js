@@ -3,11 +3,11 @@ import {
     Howler
 } from 'howler';
 import '../scss/style.scss';
-import font from '../font/JF-Dot-MPlusS10.ttf';
-import '../image/connect.svg';
-import '../image/text1.svg';
-import '../image/tweet.svg';
-import '../image/work.svg';
+// import font from '../font/JF-Dot-MPlusS10.ttf';
+// import '../image/connect.svg';
+// import '../image/text1.svg';
+// import '../image/tweet.svg';
+// import '../image/work.svg';
 import se from '../sound/wall_se_1.mp3';
 import Bluetooth from './modules/Bluetooth';
 import share from './modules/shareHelper';
