@@ -22,6 +22,7 @@ const database = firebase.database();
 const connectButton = document.querySelector('.js-connect');
 const workButton = document.querySelector('.js-work');
 const tweetButton = document.querySelector('.js-tweet');
+const number = document.querySelector('.js-number');
 let counter = 0;
 
 const bluetooth = new Bluetooth({
@@ -49,7 +50,7 @@ tweetButton.addEventListener('click', () => {
 })
 
 function addCounter() {
-    database.ref('iot_wall').transaction('value', (post) => {
+    database.ref('iot_wall').transaction((post) => {
         post.counter++;
         return post
     })
@@ -57,4 +58,5 @@ function addCounter() {
 
 database.ref('iot_wall').on('value', (snapchat) => {
     counter = snapchat.val().counter;
+    number.textContent = `${counter}回`;
 })
