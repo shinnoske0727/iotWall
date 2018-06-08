@@ -9,6 +9,7 @@
   "devDependencies": {
     "howler": "^2.0.12",
     "node-sass": "^4.9.0",
-    "pug": "^2.0.3"
+    "pug": "^2.0.3",
+    "querystring": "^0.2.0"
   }
 }
