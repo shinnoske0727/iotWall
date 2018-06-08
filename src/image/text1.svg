@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 95">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-size: 40px;
+        font-family: JF-Dot-MPlusS-10-Regular, "JF Dot M+S 10";
+      }
+    </style>
+  </defs>
+  <text id="text1" data-name="text1" class="cls-1" transform="translate(0 35)"><tspan x="0" y="0">壁に</tspan><tspan x="0" y="50">ぶち当たった回数</tspan></text>
+</svg>

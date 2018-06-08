@@ -3,6 +3,7 @@ import EventEmitter from 'events';
 const SERVICE_UUID = "713d0000-503e-4c75-ba94-3148f18d941e";
 const RX_CHARACTERISTIC_UUID = "713d0002-503e-4c75-ba94-3148f18d941e";
 const TX_CHARACTERISTIC_UUID = "713d0003-503e-4c75-ba94-3148f18d941e";
+const SENSOR_THRESHOLD = 30;
 
 export default class Bluetooth extends EventEmitter {
   constructor(opts={}) {
@@ -51,7 +52,7 @@ export default class Bluetooth extends EventEmitter {
                         let message;
                         message = value.buffer;
                         console.log(new Uint8Array(message)[0]);
-                        if (new Uint8Array(message)[0] >= 55) {
+                        if (new Uint8Array(message)[0] <= SENSOR_THRESHOLD) {
                           this.emit('near')
                         }
                     });

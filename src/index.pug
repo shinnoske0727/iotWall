@@ -4,7 +4,7 @@ html(lang='ja')
         meta(charset='UTF-8')
         meta(name='robots', content='noindex')
         meta(name='viewport', content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no')
-        title WebBluetoothAPI with BLENano
+        title IoT Wall
         script(src='https://www.gstatic.com/firebasejs/4.10.1/firebase.js')
         script.
             // Initialize Firebase
@@ -20,15 +20,10 @@ html(lang='ja')
             firebase.initializeApp(config);
     body
         main
-            #search-button.show
-                .view-inner
-                    .btn.btn-block.btn-lg.btn-primary SEARCH
-            #func-button.show
-                #read-button.view-inner
-                    .btn.btn-block.btn-lg.btn-primary READ
-                #write-button.view-inner
-                    .btn.btn-block.btn-lg.btn-primary WRITE
-            .view-inner
-                input#data-form.form-control(type='text', value='', placeholder='no data')
-            #loading.hide
+            .control-box
+                img(src="./image/connect.svg", alt="").connect.js-connect
+                img(src="./image/work.svg", alt="").work.js-work
+                img(src="./image/tweet.svg", alt="").tweet.js-tweet
+            img(src="./image/text1.svg", alt="").text
+            p.number 12回
         script(src="js/app.js")
